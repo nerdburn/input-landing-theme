@@ -1,0 +1,21 @@
+<template name="portfolio">
+  
+  <div class="portfolio">
+    <div class="wrapper">
+      <ul>
+        {{#each projects}}
+          <li class="{{className}}">
+            <h3>
+              <a data-prev class="ss-icon prev">left</a>            
+              {{title}}
+              <a data-next class="ss-icon next">right</a>
+            </h3>
+            <img src="{{image}}" />
+            <p>{{description}}</p>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  
+</template>
