@@ -8,8 +8,7 @@ if(Meteor.isClient) {
           image: '/slack.png',
           description: 'A fun and easy messaging app.',
           className: 'slack' 
-        }
-        /*
+        },
         {
           title: 'Mastodon',
           image: '/mastodon.png',
@@ -28,7 +27,6 @@ if(Meteor.isClient) {
           description: 'A fun and easy messaging app.',
           className: 'quoterobot'
         }
-        */
       ];
     }
   });

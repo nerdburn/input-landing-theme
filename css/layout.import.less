@@ -69,8 +69,11 @@ body {
   bottom: @gutter;
   left: 0;
   font-size: 0.85rem;
-  .opacity(0.5);
   a {
     text-decoration: underline;
+    .opacity(0.5);
+    &:hover {
+      .opacity(1);
+    }
   }
 }
