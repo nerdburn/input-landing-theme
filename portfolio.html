@@ -2,16 +2,17 @@
   
   <div class="portfolio">
     <div class="wrapper">
-      <ul>
-        {{#each projects}}
+      <ul>       
+        {{#each projects}}        
           <li class="{{className}}">
-            <h3>
-              <a data-prev class="ss-icon prev">left</a>            
-              {{title}}
-              <a data-next class="ss-icon next">right</a>
-            </h3>
-            <img src="{{image}}" />
-            <p>{{description}}</p>
+            <a data-prev class="ss-icon prev">left</a>     
+            <a data-next class="ss-icon next">right</a>
+            <h3>Postachio</h3>            
+            <!-- <img src="{{image}}" /> -->
+            <div class="img">
+              <img src="{{image}}" />
+            </div>
+            <p>The Evernote powered blogging platform.</p>
           </li>
         {{/each}}
       </ul>

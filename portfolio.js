@@ -4,10 +4,10 @@ if(Meteor.isClient) {
     projects: function() {
       return [
         {
-          title: 'Slack',
-          image: '/slack.png',
-          description: 'A fun and easy messaging app.',
-          className: 'slack' 
+          title: 'Postachio',
+          image: '/postachio.png',
+          description: 'The Evernote powered blogging platform.',
+          className: 'postachio' 
         },
         {
           title: 'Mastodon',
