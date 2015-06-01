@@ -1,0 +1,75 @@
+@import 'http://fast.fonts.net/cssapi/8886cca9-266c-4a31-9bce-60dfb3694600.css';
+
+.avenir(@weight) when (@weight = 'medium') {
+  font-family:'Avenir LT W01_65 Medium';  
+}
+.avenir(@weight) when (@weight = 'light') {
+  font-family:'Avenir LT W01_35 Light';
+}
+
+body {
+  .avenir('light');
+  color: @white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1.logo,
+.faded {
+  .opacity(0.5);
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  .transition(all 0.2s ease-in-out);
+  text-decoration: none;
+  color: @white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1.logo {
+  @size: 55px;
+  width: @size;
+  height: @size;
+  line-height: @size;
+  padding: 0;
+  margin: 0;
+}
+
+h2.intro {
+  position: absolute;
+  font-size: 2.75rem;
+  top: 250px;
+  left: 0;
+  line-height: 2.75rem;
+}
+
+p.intro {
+  position: absolute;
+  font-size: 1.75rem;
+  padding: 0;
+  margin: 0;
+  top: 250px;
+  left: 0;
+  a {
+    text-decoration: underline;
+    font-size: 1rem;
+    .avenir(medium);
+  }
+}
+.show-portfolio-btn {
+  position: absolute;
+  top: 18px;
+  right: -50px;
+  font-size: 1.75rem;
+}

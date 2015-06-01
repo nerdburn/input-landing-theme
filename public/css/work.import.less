@@ -1,0 +1,46 @@
+html, body {
+  overflow-y: scroll;
+}
+
+.work {
+  display: block;
+  position: relative;
+  .wrapper {
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+.work-items {
+  padding-top: @gutter*2;
+  color: @black;
+  li {
+    text-align: center;
+    padding-bottom: @gutter;
+    img {
+      margin: 0 auto;
+      max-width: 100%;
+      &.dribbble-shot {
+        max-width: 400px;
+        max-height: 300px;
+      }
+    }
+    &.work-section {
+      span.work-title {
+        display: block;
+        font-size: 1.25rem;
+      }
+      a.work-url {
+        display: block;
+        font-size: 0.85rem;
+        color: #ff5764;
+      }
+      span.work-description {
+        display: block;
+        font-style: italic;
+        color: #e5e5e5;
+        font-size: 1rem;
+      }
+    }
+  }
+}

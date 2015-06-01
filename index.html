@@ -1,9 +1,13 @@
-<head>
-  <link rel="stylesheet" href="/ss-glyphish/ss-glyphish-outlined.css" />
-  <title>Input Logic</title>
-</head>
+<template name="layout">
 
-<body>
-  {{>site}}
-  <script src="/ss-glyphish/ss-glyphish-outlined.js"></script>
-</body>
+  <head>
+    <link rel="stylesheet" href="/ss-glyphish/ss-glyphish-outlined.css" />
+    <title>Input Logic</title>
+  </head>
+
+  <body>
+    {{>yield}}
+    <script src="/public/fonts/ss-glyphish/ss-glyphish-outlined.js"></script>
+  </body>
+
+</template>

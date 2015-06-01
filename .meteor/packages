@@ -9,3 +9,4 @@ autopublish
 insecure
 less
 fortawesome:fontawesome
+iron:router
