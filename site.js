@@ -25,11 +25,11 @@ if(Meteor.isClient) {
   Template.site.onRendered(function(){
     var randomColors = ['purple', 'pink', 'lightPurple', 'blue', 'jade', 'green', 'yellow', 'orange', 'red'];
     var setBgColor = function() {
-      var color = randomColors[parseInt(Math.floor(Math.random() * randomColors.length))];      
+      var color = randomColors[parseInt(Math.floor(Math.random() * randomColors.length))];
       $('body').attr('class', color);
       Meteor.setTimeout(function(){
         setBgColor();
-      }, 4000);      
+      }, 4000);
     };
     setBgColor();
   });
