@@ -6,8 +6,13 @@ html, body {
   display: block;
   position: relative;
   .wrapper {
+    width: 100%;
     margin: 0 auto;
     height: auto;
+  }
+  .logo-wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +21,7 @@ html, body {
   color: @black;
   li {
     text-align: center;
-    padding-bottom: @gutter;
+    padding-bottom: 0;
     img {
       margin: 0 auto;
       max-width: 100%;
@@ -41,6 +46,78 @@ html, body {
         color: #e5e5e5;
         font-size: 1rem;
       }
+    }
+  }
+  .project-hero {
+    background: #f7f7f7;
+    padding: 0;
+  }
+  .project-title {
+    background: #f7f7f7;
+    padding: 0 5% 10% 5%;
+    h2 {
+      font-size: 45px;
+      line-hight: 45px;
+      font-weight: normal;
+      margin: 0 0 0.5% 0;
+    }
+    h3 {
+      color: #969696;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    h3 {
+      color: #969696;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 30px 0 0 0;
+    }
+    h4 a {
+      color: #5E5E5E;
+      font-weight: normal;
+      display: block;
+      max-width: 200px;
+      padding: 5px;
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 1px solid #5E5E5E;
+    }
+    p {
+      color: #5E5E5E;
+      font-size: 16px;
+      line-height: 23px;
+      max-width: 900px;
+      margin: 1% auto;
+    }
+  }
+  .project-logo {
+    &.help-hub-logo {
+      background: #28C6A8;
+    }
+    &.data-wallet-logo {
+      background: #E0453E;
+    }
+    &.mooji-moods {
+      background: #0AB5DE;
+    }
+    &.voxeet-logo {
+      background: #4280C5;
+    }
+    &.voxeet-icon {
+      background: #F7F7F7;
+    }
+    &.banjo-logo {
+      background: #F83838;
+    }
+    &.quote-robot-logo {
+      background: #26C6CC;
+    }
+    &.postachio-logo {
+      background: #000000;
     }
   }
 }
