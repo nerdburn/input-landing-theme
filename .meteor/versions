@@ -1,3 +1,4 @@
+aldeed:template-extension@3.4.3
 autopublish@1.0.3
 autoupdate@1.2.1
 base64@1.0.3
@@ -56,5 +57,7 @@ tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
+visudare:retina@0.0.5
+visudare:retinajs@1.0.0
 webapp@1.2.0
 webapp-hashing@1.0.3

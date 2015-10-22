@@ -24,7 +24,7 @@ html, body {
     padding-bottom: 0;
     img {
       margin: 0 auto;
-      max-width: 1441px;
+      max-width: 100%;
       &.dribbble-shot {
         max-width: 400px;
         max-height: 300px;
@@ -118,6 +118,15 @@ html, body {
     }
     &.postachio-logo {
       background: #000000;
+    }
+  }
+}
+@media (min-width: 1441px) {
+  .work-items {
+  li {
+    img {
+      max-width: 1441px;
+      }
     }
   }
 }
