@@ -2,10 +2,10 @@ Router.configure({
   layoutTemplate: 'layout'
 });
 
-Router.route('/', { 
+Router.route('/', {
   name: 'site'
 });
 
-Router.route('/work', { 
+Router.route('/r4a8', {
   name: 'work'
 });
