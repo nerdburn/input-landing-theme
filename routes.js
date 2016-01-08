@@ -6,6 +6,6 @@ Router.route('/', {
   name: 'site'
 });
 
-Router.route('/r4a8', {
+Router.route('/work', {
   name: 'work'
 });
