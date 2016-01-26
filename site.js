@@ -27,11 +27,14 @@ if(Meteor.isClient) {
     var setBgColor = function() {
       var color = randomColors[parseInt(Math.floor(Math.random() * randomColors.length))];
       $('.rainbow').attr('class', color + " rainbow");
-      Meteor.setTimeout(function(){
-        setBgColor();
-      }, 4000);
     };
-    setBgColor();
+
+		setBgColor();
+		this.rainbow = Meteor.setInterval(setBgColor, 4000);
   });
+
+	Template.site.onDestroyed(function(){
+		Meteor.clearInterval(this.rainbow);
+	});
 
 }
