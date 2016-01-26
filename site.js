@@ -26,7 +26,7 @@ if(Meteor.isClient) {
     var randomColors = ['purple', 'pink', 'lightPurple', 'blue', 'jade', 'green', 'yellow', 'orange', 'red'];
     var setBgColor = function() {
       var color = randomColors[parseInt(Math.floor(Math.random() * randomColors.length))];
-      $('body').attr('class', color);
+      $('.rainbow').attr('class', color + " rainbow");
       Meteor.setTimeout(function(){
         setBgColor();
       }, 4000);
