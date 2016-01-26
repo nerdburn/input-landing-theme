@@ -1,7 +1,7 @@
 @import 'http://fast.fonts.net/cssapi/8886cca9-266c-4a31-9bce-60dfb3694600.css';
 
 .avenir(@weight) when (@weight = 'medium') {
-  font-family:'Avenir LT W01_65 Medium';  
+  font-family:'Avenir LT W01_65 Medium';
 }
 .avenir(@weight) when (@weight = 'light') {
   font-family:'Avenir LT W01_35 Light';
@@ -62,9 +62,13 @@ p.intro {
   top: 250px;
   left: 0;
   a {
+    display: inline-block;
+    padding-top: 30px;
     text-decoration: underline;
-    font-size: 1rem;
     .avenir(medium);
+    &:hover {
+      .opacity(0.6);
+    }
   }
 }
 .show-portfolio-btn {
