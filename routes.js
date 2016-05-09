@@ -9,3 +9,7 @@ Router.route('/', {
 Router.route('/work', {
   name: 'work'
 });
+
+Router.route('/w0r7k', {
+  name: 'hidden'
+});
