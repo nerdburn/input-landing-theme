@@ -23,6 +23,7 @@ if(Meteor.isClient) {
   });
 
   Template.site.onRendered(function(){
+    console.log('Rendered...')
     var randomColors = ['purple', 'pink', 'lightPurple', 'blue', 'jade', 'green', 'yellow', 'orange', 'red'];
     var setBgColor = function() {
       var color = randomColors[parseInt(Math.floor(Math.random() * randomColors.length))];
